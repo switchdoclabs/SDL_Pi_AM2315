@@ -9,6 +9,8 @@
 #Introduction
 This is a pure python AM2315 library to replace the tentacle_pi C based library
 
+For the SwitchDoc Labs AM2315
+https://shop.switchdoc.com/products/grove-am2315-encased-i2c-temperature-humidity-sensor-for-raspberry-pi-arduino
 
 #Installation
 
