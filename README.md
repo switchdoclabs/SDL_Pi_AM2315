@@ -14,13 +14,14 @@ This is a pure python AM2315 library to replace the tentacle_pi C based library
 
 Requires installation of Adafruit_Python_GPIO
 
-'''
+```
 sudo apt-get update
 sudo apt-get install build-essential python-pip python-dev python-smbus git
 git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
 cd Adafruit_Python_GPIO
 sudo python setup.py install
-'''
+```
+
 
 Place files in program directory
 
