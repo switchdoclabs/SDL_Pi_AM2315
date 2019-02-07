@@ -64,9 +64,9 @@ class AM2315:
                         if (abs(self.AM2315PreviousTemp - self.temperature) > 10.0):
                             # OK, temp is bad.  Ignore
                             if (AM2315DEBUG == True):
-                                print ">>>>>>>>>>>>>"
-                                print "Bad AM2315 Temperature = ", self.temperature
-                                print ">>>>>>>>>>>>>"
+                                print (">>>>>>>>>>>>>")
+                                print ("Bad AM2315 Temperature = ", self.temperature)
+                                print (">>>>>>>>>>>>>")
                                 self.badreadings = self.badreadings+1
                                 tmp = None
                         else:
@@ -80,7 +80,7 @@ class AM2315:
                     break
             except:
                 if (AM2315DEBUG == True):
-                    print "AM2315readCount = ", count
+                    print ("AM2315readCount = ", count)
                 count += 1
                 time.sleep(0.01)
        
@@ -98,14 +98,14 @@ class AM2315:
         c = self.verify_crc(t)
 
         if (AM2315DEBUG == True):
-            print "AM2315temperature=",self.temperature
-            print "AM2315humdity=",self.humidity
-            print "AM2315crc=",self.crc
-            print "AM2315c=",c
+            print ("AM2315temperature=",self.temperature)
+            print ("AM2315humdity=",self.humidity)
+            print ("AM2315crc=",self.crc)
+            print ("AM2315c=",c)
 
         if self.crc != c:
             if (AM2315DEBUG == True):
-                print "AM2314 BAD CRC"
+                print ("AM2314 BAD CRC")
             self.badcrcs = self.badcrcs + 1
             self.crc = -1
         else:
@@ -132,8 +132,8 @@ class AM2315:
 
 if __name__ == "__main__":
     am2315 = AM2315()
-    print am2315.read_temperature()
-    print am2315.read_humidity()
-    print am2315.read_humidity_temperature()
-    print am2315.read_humidity_temperature_crc()
+    print (am2315.read_temperature())
+    print (am2315.read_humidity())
+    print (am2315.read_humidity_temperature())
+    print (am2315.read_humidity_temperature_crc())
     
