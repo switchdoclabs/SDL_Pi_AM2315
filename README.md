@@ -5,7 +5,7 @@
 # SwitchDoc Labs February 2019
 #
 #
-Version 1.3:  February 6, 2019 - increased MaxRetries to 10 per Sopwith - Updated to Python 3 
+Version 1.3:  February 6, 2019 - increased MaxRetries to 10 per Sopwith - Updated to Python 3 <BR>
 Version 1.2:  November 26, 2018 - Added bad data filter, now can return statistics good, bad reads, bad CRC<BR>
 Version 1.1:  November 14, 2018 - Added CRC Check.  Now returns -1 in CRC on CRC Fail <BR>
  
