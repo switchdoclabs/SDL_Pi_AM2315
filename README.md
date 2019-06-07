@@ -5,6 +5,7 @@
 # SwitchDoc Labs March 2019
 #
 #
+Version 1.5:  June 6, 2019 - Moved to adasmbus and improved I2C reliablity
 Version 1.4:  March 30, 2019 - Added PowerSave capability and improved temperature detection<BR>
 Version 1.3:  February 6, 2019 - increased MaxRetries to 10 per Sopwith - Updated to Python 3 <BR>
 Version 1.2:  November 26, 2018 - Added bad data filter, now can return statistics good, bad reads, bad CRC<BR>
